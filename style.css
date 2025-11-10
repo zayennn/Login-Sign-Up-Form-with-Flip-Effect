@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
-*, *::after, *::before {
+
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -65,6 +68,7 @@ span {
 span.remember {
   float: left;
 }
+
 span.remember::before {
   content: "";
   display: inline-block;
@@ -94,6 +98,7 @@ span.loginwith {
   justify-content: center;
   align-items: center;
 }
+
 span.loginwith::before {
   content: "";
   display: inline-block;
@@ -103,6 +108,7 @@ span.loginwith::before {
   vertical-align: middle;
   margin-right: 5%;
 }
+
 span.loginwith::after {
   content: "";
   display: inline-block;
@@ -134,6 +140,7 @@ button {
   text-transform: uppercase;
   transition: transform 80ms ease-in;
 }
+
 button svg {
   vertical-align: middle;
 }
@@ -159,7 +166,8 @@ button:focus {
   box-shadow: 0 14px 28px -10px rgba(0, 0, 0, 0.1), 0 10px 10px -10px rgba(0, 0, 0, 0.02);
   transform-style: preserve-3d;
 }
-#container > div {
+
+#container>div {
   position: absolute;
   width: 50%;
   min-width: 350px;
@@ -176,6 +184,7 @@ button:focus {
   padding: 2em 4em;
   text-align: center;
 }
+
 .content p {
   font-size: 1.4em;
 }
@@ -185,10 +194,12 @@ button:focus {
   background: #FAFAFA;
   border-radius: 20px 0 0 20px;
 }
+
 .login button {
   border-radius: 0px;
   width: 100%;
 }
+
 .login svg {
   margin: 1em;
   stroke: #999;
@@ -200,10 +211,12 @@ button:focus {
   border-radius: 0 20px 20px 0;
   background: #FAFAFA;
 }
+
 .register button {
   border-radius: 0px;
   width: 100%;
 }
+
 .register svg {
   margin: 1em;
   stroke: #999;
@@ -218,10 +231,12 @@ button:focus {
   transition: animation 1s linear;
   transition: animation 1s linear, -webkit-animation 1s linear;
 }
+
 .page button {
   border-color: #fff;
   background: transparent;
 }
+
 .page p {
   margin: 2em auto;
 }
@@ -235,34 +250,36 @@ button:focus {
   background: linear-gradient(135deg, #FC4F4F 0%, #FFCF00 100%) no-repeat 0 0/200%;
   z-index: 2;
 }
+
 .back .content {
   transform: rotateY(180deg);
 }
 
 .active .front {
   -webkit-animation: rot-front 0.6s ease-in-out normal forwards;
-          animation: rot-front 0.6s ease-in-out normal forwards;
+  animation: rot-front 0.6s ease-in-out normal forwards;
 }
 
 .active .back {
   -webkit-animation: rot-back 0.6s ease-in-out normal forwards;
-          animation: rot-back 0.6s ease-in-out normal forwards;
+  animation: rot-back 0.6s ease-in-out normal forwards;
 }
 
 .close .front {
   -webkit-animation: close-rot-front 0.6s ease-in-out normal forwards;
-          animation: close-rot-front 0.6s ease-in-out normal forwards;
+  animation: close-rot-front 0.6s ease-in-out normal forwards;
 }
 
 .close .back {
   -webkit-animation: close-rot-back 0.6s ease-in-out normal forwards;
-          animation: close-rot-back 0.6s ease-in-out normal forwards;
+  animation: close-rot-back 0.6s ease-in-out normal forwards;
 }
 
 @-webkit-keyframes rot-front {
   from {
     transform: translateZ(2px) rotateY(0deg);
   }
+
   to {
     transform: translateZ(1px) rotateY(-180deg);
   }
@@ -272,76 +289,90 @@ button:focus {
   from {
     transform: translateZ(2px) rotateY(0deg);
   }
+
   to {
     transform: translateZ(1px) rotateY(-180deg);
   }
 }
+
 @-webkit-keyframes close-rot-front {
   from {
     transform: translateZ(1px) rotateY(-180deg);
   }
+
   to {
     transform: translateZ(2px) rotateY(0deg);
   }
 }
+
 @keyframes close-rot-front {
   from {
     transform: translateZ(1px) rotateY(-180deg);
   }
+
   to {
     transform: translateZ(2px) rotateY(0deg);
   }
 }
+
 @-webkit-keyframes rot-back {
   from {
     transform: translateZ(1px) rotateY(0deg);
   }
+
   to {
     transform: translateZ(2px) rotateY(-180deg);
   }
 }
+
 @keyframes rot-back {
   from {
     transform: translateZ(1px) rotateY(0deg);
   }
+
   to {
     transform: translateZ(2px) rotateY(-180deg);
   }
 }
+
 @-webkit-keyframes close-rot-back {
   from {
     transform: translateZ(2px) rotateY(-180deg);
   }
+
   to {
     transform: translateZ(1px) rotateY(0deg);
   }
 }
+
 @keyframes close-rot-back {
   from {
     transform: translateZ(2px) rotateY(-180deg);
   }
+
   to {
     transform: translateZ(1px) rotateY(0deg);
   }
 }
+
 .active .register .content {
   -webkit-animation: show 0.7s ease-in-out normal forwards;
-          animation: show 0.7s ease-in-out normal forwards;
+  animation: show 0.7s ease-in-out normal forwards;
 }
 
 .close .register .content {
   -webkit-animation: hide 0.7s ease-in-out normal forwards;
-          animation: hide 0.7s ease-in-out normal forwards;
+  animation: hide 0.7s ease-in-out normal forwards;
 }
 
 .active .login .content {
   -webkit-animation: hide 0.7s ease-in-out normal forwards;
-          animation: hide 0.7s ease-in-out normal forwards;
+  animation: hide 0.7s ease-in-out normal forwards;
 }
 
 .close .login .content {
   -webkit-animation: show 0.7s ease-in-out normal forwards;
-          animation: show 0.7s ease-in-out normal forwards;
+  animation: show 0.7s ease-in-out normal forwards;
 }
 
 @-webkit-keyframes show {
@@ -349,6 +380,7 @@ button:focus {
     opacity: 0;
     transform: scale(0.8);
   }
+
   to {
     opacity: 0.99;
     transform: scale(0.99);
@@ -360,26 +392,31 @@ button:focus {
     opacity: 0;
     transform: scale(0.8);
   }
+
   to {
     opacity: 0.99;
     transform: scale(0.99);
   }
 }
+
 @-webkit-keyframes hide {
   from {
     opacity: 0.99;
     transform: scale(0.99);
   }
+
   to {
     opacity: 0;
     transform: scale(0.8);
   }
 }
+
 @keyframes hide {
   from {
     opacity: 0.99;
     transform: scale(0.99);
   }
+
   to {
     opacity: 0;
     transform: scale(0.8);
